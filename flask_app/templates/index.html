@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/1286657214.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='/css/index.css')}}">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <title>Kinectic Footwear</title>
+</head>
+
+<body>
+  <section id="nav">
+    <a href="#"><img src="{{url_for('static', filename='/Images/logo.png')}}" class="logo"></a>
+    <div>
+      <ul id="navbar">
+        <li><a class="active" href="{{url_for('dashboard')}}">Home</a></li>
+        <li><a href="{{url_for('tech')}}">The Tech</a></li>
+        <!-- <li><a href="{{url_for('shop')}}">Shop</a></li> -->
+        <li><a href="{{url_for('team')}}">Our Team</a></li>
+        <li><a href="/logout">Logout</a></li>
+        <!-- <li>
+          <a href="cart.html"><i id="lg-bag" class="fa-solid fa-bag-shopping"></i></a>
+        </li> -->
+        <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+      <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
+  </section>
+
+  <section id="hero" style="background:url(/static/Images/hero.png) center / cover no-repeat;">
+
+    <div class="hero-text">
+      <h4>Providing freedom of energy for you and <br>
+        your devices with no additional hassle for you.</h4>
+      <h1>Kinetic Footwear</h1>
+    </div>
+    <div class="newstext">
+      <p>
+        if you are interested, sign up to follow our journey and get
+        <span>10% off</span> our first launch!
+      </p>
+    </div>
+    <div class="call-action">
+      <form action="https://formsubmit.co/mjs070594@gmail.com" method="POST">
+        <input type="email" placeholder="Your email address" required />
+        <input type="hidden" name="_subject" value="New subscriber!">
+        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+        <button class="normal">Sign Up</button>
+      </form>
+
+
+    </div>
+  </section>
+  <hr class="hero-hr" />
+  <section id="banner2" class="section-b1">
+    <div class="idx_about_img">
+      <img src="{{url_for('static', filename='/Images/ChargerShoe/blue2.png')}}" alt="orange-shoe" />
+
+    </div>
+    <div class="index_about">
+      <span class="banner--emoji">🔋👟🧠</span>
+      <h1 class="about_title">About Us</h1>
+      <p>We're focusing on providing a comfortable and flexible experience for individuals to participate in
+        sustainable power generation. We are making energy harvesting technology embedded within shoes to allow you to
+        power your elecctronics whereever.</p>
+      <p>Charge anywhere, anytime. Never worry about your phone.</p>
+      <button class="normal">Learn More</button>
+    </div>
+  </section>
+  <hr class="wb_hr" />
+  <section id="banner1" style="background:url(/static/Images/banner1.svg) center / cover no-repeat;" class="banner1">
+
+    <!-- add rotation animation to shoe img -->
+    <div class=" banner-box">
+      <h4>New Arrival</h4>
+      <h2>"Kin-312"</h2>
+      <span>Shoes are a form of expression which we value highly in our design process.</span>
+      <span>Take a look at our design concepts!</span>
+      <a href="#product1" class="learn">Explore More</a>
+    </div>
+  </section>
+  <hr class="bw_hr" />
+  <section id="product1" class="section-p1">
+    <h2>Design Concepts</h2>
+    <p>Our theorized model and coloways!</p>
+    <div class="pro-container">
+      <div class="pro">
+        <div class="card">
+          <img src="{{url_for('static', filename='/Images/shoes/orange1.png')}}" alt="red-shoe" />
+          <img src="{{url_for('static', filename='/Images/shoes/orange2.png')}}" class="img-top" alt="red-2" />
+        </div>
+        <div class="desc">
+          <span>Running Shoe</span>
+          <h5>Kin-312 "Blaze"</h5>
+          <!-- <h4>$250</h4> -->
+        </div>
+      </div>
+      <div class="pro">
+        <div class="card">
+          <img src="{{url_for('static', filename='/Images/shoes/blue1.png')}}" alt="red-shoe" />
+          <img src="{{url_for('static', filename='/Images/shoes/blue2.png')}}" class="img-top" alt="red-2" />
+        </div>
+        <div class="desc">
+          <span>Running Shoe</span>
+          <h5>Kin-312 "Ocean"</h5>
+          <!-- <h4>$250</h4> -->
+        </div>
+      </div>
+      <div class="pro">
+        <div class="card">
+          <img src="{{url_for('static', filename='/Images/shoes/purple1.png')}}" alt="red-shoe" />
+          <img src="{{url_for('static', filename='/Images/shoes/purple2.png')}}" class="img-top" alt="red-2" />
+        </div>
+        <div class="desc">
+          <span>Running Shoe</span>
+          <h5>Kin-312 "Royal"</h5>
+          <!-- <h4>$250</h4> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr />
+  <section id="interest_form" style="background:url(/static/Images/survey_star.png) center / cover no-repeat;"
+    class="survey_banner1">
+    <div class="interest_div">
+      <h1>Interest Survey</h1>
+      <p>We want to know you! <br>
+        Take this survey so we can create the best product for you!</p>
+      <a class="normal" href="/new/survey">Take The Survey</a>
+    </div>
+
+  </section>
+  <hr />
+  <footer id="foot-main" style="background:url(/static/Images/banner8.svg) center / cover no-repeat;">
+    <div class="main-col">
+      <div class="col-1">
+        <img class="foot-icon" src="{{url_for('static', filename='/Images/logo.png')}}" alt="logo" />
+        <h4>Follow Us On</h4>
+        <div class="icon">
+          <i class="fa-brands fa-facebook"> <a href="#"> Facebook </a> </i>
+          <i class="fa-brands fa-twitter"><a href="#"> Twitter </a></i>
+          <i class="fa-brands fa-instagram-square"><a href="#"> Instagram</a></i>
+          <!-- <i class="fa-brands fa-youtube"><a href="#"> Youtube</a></i> -->
+        </div>
+        <div class="newstext">
+          <p>
+            Stay updated on our journey!
+          </p>
+        </div>
+        <div class="call-action">
+          <input type="email" placeholder="Your email address" />
+          <button class="normal_footer">Sign Up</button>
+        </div>
+      </div>
+      <div class="col-2">
+        <h4>About</h4>
+        <a href="{{url_for('team')}}">About Us</a>
+        <!-- <a href="#">Delivery Info</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a> -->
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="col-3">
+        <h4>My Account</h4>
+        <a href="/logout">Logout</a>
+        <!-- <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a> -->
+        <a href="#">Help</a>
+      </div>
+      <!-- <div class="col-4">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="app-row">
+          <img class="appStore" src="{{url_for('static', filename='Images/googleplay.svg')}}" alt="Google-play" />
+          <img class="appStore" src="{{url_for('static', filename='Images/appstore.svg')}}" alt="Apple-Play" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <div class="pay-cards">
+          <img class="cards" src="{{url_for('static', filename='Images/visa.svg')}}" alt="Cards" />
+          <img class="cards" src="{{url_for('static', filename='Images/mastercard.svg')}}" alt="" />
+          <img class="cards" src="{{url_for('static', filename='Images/discover.svg')}}" alt="" />
+          <img class="cards" src="{{url_for('static', filename='Images/amex.svg')}}" alt="" />
+        </div>
+      </div> -->
+    </div>
+  </footer>
+  <script type="text/javascript" src="{{url_for('static', filename='/script/index.js')}}"></script>
+</body>
+<!--  add review carousel -->
+<!-- ADD CAROUSEL BANNER WITH ALL INDIVIDUAL SHOES -->
+<!-- light color to back of featured products in blocks  -->
+<!-- add about  section under hero - 1 main div -> 2 divs -> photo of prototype on the left -> right side has story -"started by _ students at IIT, chasing thier passion blah blah" -> add about us -->
+<!-- move banner 2 to the about us page -->
+<!-- add single page shop html file -->
+<!-- fix nav bar hover bug -->
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1286657214.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='/css/landing.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <title>Kinectic Footwear</title>
+</head>
+
+<body>
+    <section id="nav">
+        <a href="#"><img src="{{url_for('static', filename='/Images/logo.png')}}" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="{{url_for('dashboard')}}">Home</a></li>
+                <li><a href="{{url_for('tech')}}">The Tech</a></li>
+                <!-- <li><a href="{{url_for('shop')}}">Shop</a></li> -->
+                <li><a href="{{url_for('team')}}">Our Team</a></li>
+                <li><a href="/logout">Logout</a></li>
+                <!-- <li>
+              <a href="cart.html"><i id="lg-bag" class="fa-solid fa-bag-shopping"></i></a>
+            </li> -->
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+    <section id="hero" style="background:url(/static/Images/hero.png) center / cover no-repeat;">
+
+        <div class="hero-text">
+            <h4>Providing freedom of energy for you and <br>
+                your devices with no additional hassle for you.</h4>
+            <h1>Kinetic Footwear</h1>
+        </div>
+        <div class="newstext">
+            <p>
+                if you are interested, sign up to follow our journey and get
+                <span>10% off</span> our first launch!
+            </p>
+        </div>
+        <div class="call-action">
+            <form action="https://formsubmit.co/mjs070594@gmail.com" method="POST">
+                <input type="email" placeholder="Your email address" required />
+                <input type="hidden" name="_subject" value="New subscriber!">
+                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                <button class="normal">Sign Up</button>
+            </form>
+
+
+        </div>
+    </section>
+</body>
+
+</html>

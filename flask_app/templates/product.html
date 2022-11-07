@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ICON -->
+  <script src="https://kit.fontawesome.com/1286657214.js" crossorigin="anonymous"></script>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='/css/shop.css')}}">
+  <title>Kinectic Footwear</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <section id="nav">
+    <a href="#"><img src="/Shop/shop-img/logo.png" class="logo" alt="" /></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="{{url_for('tech')}}">The Tech</a></li>
+        <li><a class="active" href="/Shop/shop.html">Shop</a></li>
+        <li><a href="contact.html">Our Team</a></li>
+        <li>
+          <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- MAIN CONTENT -->
+  <!-- SINGLE PRODUCT -->
+  <section id="prodetails" class="section-p1">
+    <div class="single-pro-img">
+      <img src="/Shop/shop-img/shoes/orange1.png" width="100%" id="mainImg" alt="orange shoe" />
+
+      <div class="small-img-group">
+        <div class="small-img-col">
+          <img src="/Shop/shop-img/shoes/orange2.png" width="100%" class="small-img" alt="orange 2" />
+        </div>
+      </div>
+    </div>
+    <!-- PRODUCT DETAILS -->
+    <div class="single-pro-details">
+      <h6>Home / Shop</h6>
+      <h4>Kin-312</h4>
+      <h2>$250</h2>
+      <select>
+        <option value="select">Select Size</option>
+        <option value="select">7</option>
+        <option value="select">7.5</option>
+        <option value="select">8</option>
+        <option value="select">6.5</option>
+        <option value="select">9</option>
+        <option value="select">9.5</option>
+        <option value="select">10</option>
+        <option value="select">10.5</option>
+        <option value="select">11</option>
+        <option value="select">11.5</option>
+        <option value="select">12</option>
+      </select>
+      <input type="number" value="1" />
+      <button class="normal">Add To Cart</button>
+      <h4>Product Details</h4>
+      <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
+        accusantium ullam veritatis quaerat deleniti dolor vitae, debitis
+        possimus ex animi cum ut? Quod consequuntur error, nobis nam
+        voluptatem sequi sunt!</span>
+    </div>
+  </section>
+  <!-- ADD IN REACT SIDE BAR FILTERS -->
+  <!-- NAV FILTERS -->
+  <div class="dropdown-sort">
+    <label for="sort">Sort by</label>
+    <select name="sort" id="sort">
+      <option value="featured">Featured</option>
+      <option value="newest">Newest</option>
+      <option value="high-low">Price: High-Low</option>
+      <option value="low-high">Price: Low-High</option>
+    </select>
+  </div>
+  <section id="product1" class="section-p1">
+    <h2>Featured Products</h2>
+    <p>Our most popular model and coloways!</p>
+    <div class="pro-container">
+      <div class="pro">
+        <div class="card">
+          <img src="/Shop/shop-img/shoes/blue1.png" alt="blue-shoe" />
+          <img src="/Shop/shop-img/shoes/blue2.png" class="img-top" alt="blue2" />
+        </div>
+        <div class="desc">
+          <span>Loafers</span>
+          <h5>Kin-312 "Ocean"</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>$250</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+      </div>
+      <div class="pro">
+        <div class="card">
+          <img src="/Shop/shop-img/shoes/yellow1.png" alt="yellow-shoe" />
+          <img src="/Shop/shop-img/shoes/yellow2.png" class="img-top" alt="yellow2" />
+        </div>
+        <div class="desc">
+          <span>Kinetic Footwear</span>
+          <h5>Kinetic Proto 4</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>$250</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+      </div>
+      <div class="pro">
+        <div class="card">
+          <img src="/Shop/shop-img/shoes/green1.png" alt="green-shoe" />
+          <img src="/Shop/shop-img/shoes/green2.png" class="img-top" alt="green2" />
+        </div>
+        <div class="desc">
+          <span>Kinetic Footwear</span>
+          <h5>Kinetic Proto 5</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>$250</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <hr />
+  <footer id="foot-main">
+    <div class="main-col">
+      <div class="foot-1">
+        <img class="foot-icon" src="/Images/logo.png" alt="logo" />
+        <h4>Follow Us On</h4>
+        <div class="follow-icon">
+          <i class="fa-brands fa-facebook"> <a href="#"> Facebook </a> </i>
+          <i class="fa-brands fa-twitter"><a href="#"> Twitter </a></i>
+          <i class="fa-brands fa-instagram-square"><a href="#"> Instagram</a></i>
+          <i class="fa-brands fa-youtube"><a href="#"> Youtube</a></i>
+        </div>
+        <div class="newstext">
+          <p>
+            Stay updated on our newest drops and
+            <span>special offers!</span>
+          </p>
+        </div>
+        <div class="call-action">
+          <input type="email" placeholder="Your email address" />
+          <button class="foot-btn">Sign Up</button>
+        </div>
+      </div>
+      <div class="foot-2">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Info</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="foot-3">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="foot-4">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="app-row">
+          <img class="appStore" src="/Shop/shop-img/googleplay.svg" alt="Google-play" />
+          <img class="appStore" src="/Shop/shop-img/appstore.svg" alt="Apple-Play" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <div class="pay-cards">
+          <img class="cards" src="/Shop/shop-img/visa.svg" alt="visa" />
+          <img class="cards" src="/Shop/shop-img/mastercard.svg" alt="mastercard" />
+          <img class="cards" src="/Shop/shop-img/discover.svg" alt="discover" />
+          <img class="cards" src="/Shop/shop-img/amex.svg" alt="amex" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- SCRIPT -->
+  <script src="/Shop/shop.js"></script>
+</body>
+
+</html>

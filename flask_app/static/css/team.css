@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+hr {
+  background: linear-gradient(to right, #0be4d1, yellow);
+  height: 10px;
+}
+.section-p1 {
+  padding: 120px 80px;
+}
+
+.section-b1 {
+  padding: 40px 0px;
+}
+
+body {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+}
+
+
+.team_hr {
+  background-image: linear-gradient(
+    60deg,
+    hsl(0deg 100% 41%) 0%,
+    hsl(307deg 100% 36%) 23%,
+    hsl(197deg 100% 50%) 43%,
+    hsl(157deg 100% 65%) 62%,
+    hsl(64deg 100% 48%) 81%,
+    hsl(122deg 100% 50%) 100%
+  );
+  height: 9px;
+}
+
+/*********************** HEADER ************************/
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 80px;
+  background: black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.logo {
+  width: 70px;
+  height: auto;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 20;
+  font-weight: 600;
+  color: #ffffff;
+  transition: 0.3s ease;
+  /* makes the hover color transition much smoother */
+}
+
+/* .active shows highlights which page youre on at navbar */
+#navbar li a:hover,
+#navbar li a.active {
+  color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+#close {
+  display: none;
+}
+
+/* Our Team Main */
+
+
+
+.team_block {
+  text-align: center;
+  padding: 30px 0px 80px 0;
+  height: 100vh
+}
+.team_block h1 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+.team_block h2 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.team_block h3 {
+  padding-bottom: 10px;
+}
+.double_block {
+  display: flex;
+  width: 100%;
+  padding: 30px 40px 30px 40px;
+}
+
+.block_one {
+  width: 50%;
+  font-size: 15px;
+}
+.block_two {
+  width: 50%;
+  font-size: 15px;
+
+}
+
+.team_img {
+  width: 300px;
+  height: auto;
+  border: 5px solid #555;
+  border-radius: 50%;
+}
+/*********************** FOOTER ************************/
+footer {
+  background-image: url(Images/banner8.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #eee;
+  padding: 120px 80px;
+  height: 500px;
+}
+footer #foot-main {
+  margin-bottom: 20px;
+  color: #eee;
+}
+.normal_footer {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: rgb(255 205 46);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transform: 0.2s;
+}
+.main-col {
+  display: flex;
+  justify-content: space-evenly;
+}
+.fa-brands {
+  margin: 0px 20px 80px 0px;
+}
+.col-1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.col-3 {
+  display: flex;
+  flex-direction: column;
+}
+.col-4 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+footer .app-row {
+  display: flex;
+  margin-top: -20px;
+}
+footer h4 {
+  font-size: 18px;
+  color: #eee;
+  margin-bottom: 10px;
+  color: #0be4d1;
+}
+
+footer p {
+  font-size: 20px;
+  margin: 0 0 8px 0;
+  color: #eee;
+}
+
+footer a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #eee;
+  margin-bottom: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer span {
+  margin-right: 10px;
+  color: #0be4d1;
+}
+
+.foot-icon {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  margin-bottom: 20px;
+}
+.cards {
+  width: 60px;
+}
+
+.appStore {
+  width: 90px;
+}
+
+footer input {
+  height: 2.75rem;
+  padding: 0 1.25rem;
+  font-size: 14px;
+  width: 350px;
+  color: #eee;
+  background-color: #606063;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+::placeholder {
+  font-style: italic;
+  font-size: 1.2em;
+  color: mintcream;
+  padding: 5px;
+}
+footer button .normal {
+  background-color: #e9ff4f;
+  color: #eee;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transform: 0.2s;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+footer button:hover {
+  background-color: #4d998f;
+  color: #eee;
+}
+
+footer p {
+  color: #eee;
+  font-size: 15px;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/1286657214.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='/css/team.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <title>Kinectic Footwear</title>
+</head>
+
+<body>
+    <section id="nav">
+        <a href="#"><img src="{{url_for('static', filename='/Images/logo.png')}}" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="{{url_for('dashboard')}}">Home</a></li>
+                <li><a href="{{url_for('tech')}}">The Tech</a></li>
+                <!-- <li><a href="{{url_for('shop')}}">Shop</a></li> -->
+                <li><a class="active" href="{{url_for('team')}}">Our Team</a></li>
+                <li><a href="/logout">Logout</a></li>
+                <!-- <li>
+                    <a href="cart.html"><i id="lg-bag" class="fa-solid fa-bag-shopping"></i></a>
+                </li> -->
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+    <hr class="team_hr">
+    <section>
+        <div class="team_block">
+            <h1>Our Team</h1>
+            <div class="double_block">
+                <div class="block_one">
+                    <img class="team_img" src="{{url_for('static', filename='/Images/neil-modified.png')}}"
+                        alt="neil" />
+                    <h2>Neil John</h2>
+                    <h3>Chief Executive Officer</h3>
+                    <p>Neil has spent most of his life as a sneakerhead, always wanting to design his own shoe. After
+                        spending
+                        multiple years on projects related to sustainible energy Neil directed his energy to the goal of
+                        building an energy harvesting shoe. As a dancer and an engineer, Neil wants to ensure that the
+                        product
+                        he delivers is something that he would use when on a walk or on a stage. </p>
+                </div>
+                <div class="block_two">
+                    <img class="team_img" src="{{url_for('static', filename='/Images/koushik-modified.png')}}"
+                        alt="koushik" />
+                    <h2>Koushik Neogi</h2>
+                    <h3>Chief Technology Officer</h3>
+                    <p>Koushik is a mechanical engineer by career who specializes in simulating and optimizing
+                        mechanical
+                        and
+                        electrical systems. First prototyped in a senior design project, Koushik has been working to
+                        optimize
+                        and create the best product for out users.</p>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <footer id="foot-main" style="background:url(/static/Images/banner8.svg) center / cover no-repeat;">
+            <div class="main-col">
+                <div class="col-1">
+                    <img class="foot-icon" src="{{url_for('static', filename='/Images/logo.png')}}" alt="logo" />
+                    <h4>Follow Us On</h4>
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook"> <a href="#"> Facebook </a> </i>
+                        <i class="fa-brands fa-twitter"><a href="#"> Twitter </a></i>
+                        <i class="fa-brands fa-instagram-square"><a href="#"> Instagram</a></i>
+                        <!-- <i class="fa-brands fa-youtube"><a href="#"> Youtube</a></i> -->
+                    </div>
+                    <div class="newstext">
+                        <p>
+                            Stay updated on our journey!
+                        </p>
+                    </div>
+                    <div class="call-action">
+                        <input type="email" placeholder="Your email address" />
+                        <button class="normal_footer">Sign Up</button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <h4>About</h4>
+                    <a href="{{url_for('team')}}">About Us</a>
+                    <!-- <a href="#">Delivery Info</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a> -->
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="col-3">
+                    <h4>My Account</h4>
+                    <a href="/logout">Logout</a>
+                    <!-- <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a> -->
+                    <a href="#">Help</a>
+                </div>
+                <!-- <div class="col-4">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="app-row">
+                  <img class="appStore" src="{{url_for('static', filename='Images/googleplay.svg')}}" alt="Google-play" />
+                  <img class="appStore" src="{{url_for('static', filename='Images/appstore.svg')}}" alt="Apple-Play" />
+                </div>
+                <p>Secured Payment Gateways</p>
+                <div class="pay-cards">
+                  <img class="cards" src="{{url_for('static', filename='Images/visa.svg')}}" alt="Cards" />
+                  <img class="cards" src="{{url_for('static', filename='Images/mastercard.svg')}}" alt="" />
+                  <img class="cards" src="{{url_for('static', filename='Images/discover.svg')}}" alt="" />
+                  <img class="cards" src="{{url_for('static', filename='Images/amex.svg')}}" alt="" />
+                </div>
+              </div> -->
+            </div>
+        </footer>
+    </section>

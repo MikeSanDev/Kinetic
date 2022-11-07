@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/1286657214.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='/css/tech.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <title>Kinectic Footwear</title>
+</head>
+
+<body>
+    <section id="nav">
+        <a href="#"><img src="{{url_for('static', filename='/Images/logo.png')}}" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="{{url_for('dashboard')}}">Home</a></li>
+                <li><a class="active" href="{{url_for('tech')}}">The Tech</a></li>
+                <!-- <li><a href="{{url_for('shop')}}">Shop</a></li> -->
+                <li><a href="{{url_for('team')}}">Our Team</a></li>
+                <li><a href="/logout">Logout</a></li>
+                <!-- <li>
+                    <a href="cart.html"><i id="lg-bag" class="fa-solid fa-bag-shopping"></i></a>
+                </li> -->
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+    <hr class="team_hr">
+    <section class="section-p1 ">
+        <div class="main_block">
+            <div class="tech_block">
+                <div class="tech_photo tech_pic1"><img src="{{url_for('static', filename='/Images/jump_left.svg')}}">
+                </div>
+                <div class="tech_info">
+                    <h5>Walking is an everyday activity!</h5>
+                    <p>It helps us go to the grocery store, to our classes, to the other side of the city if we are so
+                        pleased. Walking helps us stay in shape and stay healthy. But what if it could do more for us?
+                        What if walking could give us power?</p>
+                </div>
+            </div>
+            <div class="tech_block">
+                <div class="tech_info">
+                    <h5>Our product does just that.</h5>
+                    <p>It takes the compression energy generated on your footwear and converts it to stored electrical
+                        power so you can use it to charge up your portable devices!</p>
+                </div>
+                <div class="tech_photo tech_pic2"><img src="{{url_for('static', filename='/Images/walk_right.svg')}}">
+                </div>
+            </div>
+            <!-- <div class="tech_block">
+                <div class="tech_photo"><img src="{{url_for('static', filename='/Images/jump_left.svg')}}"></div>
+                <div class="tech_info"></div>
+            </div> -->
+        </div>
+    </section>
+    <hr />
+    <footer id="foot-main" style="background:url(/static/Images/banner8.svg) center / cover no-repeat;">
+        <div class="main-col">
+            <div class="col-1">
+                <img class="foot-icon" src="{{url_for('static', filename='/Images/logo.png')}}" alt="logo" />
+                <h4>Follow Us On</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"> <a href="#"> Facebook </a> </i>
+                    <i class="fa-brands fa-twitter"><a href="#"> Twitter </a></i>
+                    <i class="fa-brands fa-instagram-square"><a href="#"> Instagram</a></i>
+                    <!-- <i class="fa-brands fa-youtube"><a href="#"> Youtube</a></i> -->
+                </div>
+                <div class="newstext">
+                    <p>
+                        Stay updated on our journey!
+                    </p>
+                </div>
+                <div class="call-action">
+                    <input type="email" placeholder="Your email address" />
+                    <button class="normal_footer">Sign Up</button>
+                </div>
+            </div>
+            <div class="col-2">
+                <h4>About</h4>
+                <a href="{{url_for('team')}}">About Us</a>
+                <!-- <a href="#">Delivery Info</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a> -->
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col-3">
+                <h4>My Account</h4>
+                <a href="/logout">Logout</a>
+                <!-- <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a> -->
+                <a href="#">Help</a>
+            </div>
+            <!-- <div class="col-4">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="app-row">
+          <img class="appStore" src="{{url_for('static', filename='Images/googleplay.svg')}}" alt="Google-play" />
+          <img class="appStore" src="{{url_for('static', filename='Images/appstore.svg')}}" alt="Apple-Play" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <div class="pay-cards">
+          <img class="cards" src="{{url_for('static', filename='Images/visa.svg')}}" alt="Cards" />
+          <img class="cards" src="{{url_for('static', filename='Images/mastercard.svg')}}" alt="" />
+          <img class="cards" src="{{url_for('static', filename='Images/discover.svg')}}" alt="" />
+          <img class="cards" src="{{url_for('static', filename='Images/amex.svg')}}" alt="" />
+        </div>
+      </div> -->
+        </div>
+    </footer>
+</body>
+
+</html>

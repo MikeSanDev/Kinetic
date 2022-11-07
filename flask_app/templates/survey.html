@@ -1,0 +1,197 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Interest Form
+    </title>
+
+    <style>
+        body {
+            background-image: linear-gradient(0deg,
+                    hsl(172deg 33% 45%) 0%,
+                    hsl(172deg 31% 61%) 17%,
+                    hsl(172deg 35% 79%) 33%,
+                    hsl(0deg 0% 100%) 50%,
+                    hsl(172deg 35% 79%) 67%,
+                    hsl(172deg 31% 61%) 83%,
+                    hsl(172deg 33% 45%) 100%);
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .title {
+            padding-top: 50px;
+            color: #fff;
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 17px;
+            display: block;
+            width: 95%;
+        }
+
+        /* Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        /* Styling Button */
+        button {
+            background-color: #4d998f;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding: 15px 0px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1 class="title">Kinetic Footwear Interest Form</h1>
+
+    <form action="/create/survey" method="post" id="form">
+        {% with messages = get_flashed_messages(category_filter=['survey']) %}
+        {% if messages %}
+        <div role="alert">
+            <strong>😡</strong>
+            {% for message in messages %}
+            <p>{{message}}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% endwith %}
+        <div class="form-control">
+            <label for="impression" name="impression">
+                What is your first impression of this product?
+            </label>
+            <input type="text" name="impression" />
+        </div>
+
+        <div class="form-control">
+            <label for="features" name="feature">
+                What features would you add?
+            </label>
+            <input type="text" name="feature" />
+        </div>
+
+        <div class="form-control">
+            <label>
+                Is the product a good value for the price?
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="value_1" name="value">
+                <input type="radio" id="value_1" value="Yes" name="value">Yes</input>
+            </label>
+            <label for="value_2">
+                <input type="radio" id="value_2" value="No" name="value">No</input>
+            </label>
+
+        </div>
+
+        <div class="form-control">
+            <label>How likely would you find this product useful?
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1" name="useful">
+                <input type="radio" value="Very Likely" name="useful">Very Likely</input></label>
+            <label for="inp-2">
+                <input type="radio" value="Somewhat Likely" name="useful">Somewhat Likely</input></label>
+            <label for="inp-3">
+                <input type="radio" value="Neutral" name="useful">Neutral</input></label>
+            <label for="inp-4">
+                <input type="radio" value="Somewhat Unlikely" name="useful">Somewhat Unlikely</input></label>
+            <label for="inp-5">
+                <input type="radio" value="Very Unlikely" name="useful">Very Unlikely</input></label>
+        </div>
+
+        <div class="form-control">
+            <label>If the product was available today, how likely would you be to buy it?
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1" name="available">
+                <input type="radio" value="Very Likely" name="available">Very Likely</input></label>
+            <label for="inp-2">
+                <input type="radio" value="Somewhat Likely" name="available">Somewhat Likely</input></label>
+            <label for="inp-3">
+                <input type="radio" value="Neutral" name="available">Neutral</input></label>
+            <label for="inp-4">
+                <input type="radio" value="Somewhat Unlikely" name="available">Somewhat Unlikely</input></label>
+            <label for="inp-5">
+                <input type="radio" value="Very Unlikely" name="available">Very Unlikely</input></label>
+        </div>
+
+        <div class="form-control">
+            <label>How likely are you to recommend this product to people you know?
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1" name="recommend">
+                <input type="radio" value="Very Likely" name="recommend">Very Likely</input></label>
+            <label for="inp-2">
+                <input type="radio" value="Somewhat Likely" name="recommend">Somewhat Likely</input></label>
+            <label for="inp-3">
+                <input type="radio" value="Neutral" name="recommend">Neutral</input></label>
+            <label for="inp-4">
+                <input type="radio" value="Somewhat Unlikely" name="recommend">Somewhat Unlikely</input></label>
+            <label for="inp-5">
+                <input type="radio" value="Very Unlikely" name="recommend">Very Unlikely</input></label>
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment" placeholder="Enter your comment here">
+            </textarea>
+        </div>
+
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+
+</html>

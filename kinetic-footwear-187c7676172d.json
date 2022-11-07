@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "kinetic-footwear",
+  "private_key_id": "187c7676172de71a3c5b6cf7fffc4b116b17cc64",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCglUBNATEPVkBc\ngp1l0w5b5QijWZntCEWVJmag+Ccijej8GUcEujrjVe+i7fCohcEkYLS9YnhfH1gN\nG+TuI7Pv4wklkurmIUlZ+bxOLTD+3dgqWWbnEt1MV0HAHxWlyLOXf7El95yGwOMM\nVIT3Ba4DWYdjjI0gxL4q2BvGtLknrF6crxuwmWOJTceJiWtGFFZItj1lt22DszPJ\n+Knxy9/7jkBjo0hntXPqh940nzVQR63H7jAEWkXkjP6MvfX2qunX8o41YvmblkoN\ng1OAnvC7S13LMK97vIXJ+4nxyyMIEj3PEKb4GvyowzpN7RotK7iJmtUb1NqIlRcW\nBWLUbIBDAgMBAAECggEAAuB8G8UQlIUbaJ4cIAIS3Jb8zzT+Fdsm912EQZA+GbUI\ndJBh+8Iy04AN574BnsjT5WuF9RyiUYN9DLHXqYsnNCWCtFMfw/ufhzfdgx9X6XwU\n+tYsWW6ZIEjPcqGoPfklaBHs/4G2GNVRvnknKl48VdFCOEOetGrG2FPiwLzINN84\n6kSZjI5bN9Fvg+0JEzIzrOc4WCl0TuitxkKe5My/e4bswc5V7frV671GhoCTaeFn\nFJtGamz819jftLeWRKS6q/USPZWrIZOdItZj7j0d0dPcox8ZHygR7FPxWSC12G72\n/DJuLvib2H7z3Szlgj4tXZXt5d8/F5WM6ZYWlFlDZQKBgQDPVpIfM39R6wtKsaLY\nPVQqAzqzOj/FFfGIMo/g9uJAY7DYFgb1OxzcLIunC5j9W6BskCKFdryARR9RsL4G\nhQfqe4yRNxNKSgRqkbSOGhePBZovktE4sC8dVDdPIZoIA+FW1iHV2xDFEeQvoh9+\nZgCVDYRQUJC1VlBnq+TZCRSwRwKBgQDGRYGVOy7mDGBnQ0XH1zzq9p46oQQlovxD\n7aplstiFfqKANAvu8VusVq9zaXUIczRzRafWF2+5cuBiZ708c+jvbcNfrfwSNBTb\nr97n8qpsKZskMbR8uAV+x9yAnq9N3xLufAqiWWwwY1l/7hi3KVhS8U1Zn8loLcrp\nngUHjnHKJQKBgQCKFp47KZEifeiHVseePTpQwNXXiHPwTy0OCJ7KtaL6P2sIf6Mi\nsLwH56MbHh5Gnz+5DkXvnaTtyRuSzKPCs9cR1DdKf+PZFnLahzA5dCc8mf6WsLGn\nj6/RWMV9bmOn8u2hZ/wg8kW4+rF/B/rxs/2vR9FXrFC0dUgXw+QmqGWfAQKBgQCp\nbxpmsdXJJ8h2VknaljfrvubGyXSmyRp03jQghm573hT2JAQSpFUn+EglA3jMyM6I\nt3zO+uYx/1Z7IZXYhGEJwq4UJLVlxPYSKr/9TSWQGxoGGyfW8NdZWWg4zeKXVEt0\nW7ImvO40h6IjLhAW7hEZiDYGogLWsVNWwwAfTf41tQKBgBMNus7HjZAdhVguomqs\nkRy1LZi/nmrxVanzlkuySn63Ln7gfrKuiz4qmyP4I+VJkc3NZhdS6tPlPaIJG4fH\ns7WLpwc7rl1CZyBZEH5k0nq9yPnv5w4YTPW/sdUgR2vXIdsWhty+oX0vPVFQ6Clp\nzrJkgDp8Jj5is8E7EYEU4/QC\n-----END PRIVATE KEY-----\n",
+  "client_email": "kineticprinteddatabaseaccount@kinetic-footwear.iam.gserviceaccount.com",
+  "client_id": "114358675649469309641",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/kineticprinteddatabaseaccount%40kinetic-footwear.iam.gserviceaccount.com"
+}

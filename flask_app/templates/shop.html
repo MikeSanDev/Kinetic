@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ICON -->
+  <script src="https://kit.fontawesome.com/1286657214.js" crossorigin="anonymous"></script>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='/css/shop.css')}}">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <title>Kinectic Footwear</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <section id="nav">
+    <a href="#"><img src="{{url_for('static', filename='/Images/logo.png')}}" class="logo" alt="" /></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="{{url_for('dashboard')}}">Home</a></li>
+        <li><a href="{{url_for('tech')}}">The Tech</a></li>
+        <li><a class="active" href="{{url_for('shop')}}">Shop</a></li>
+        <li><a href="{{url_for('team')}}">Our Team</a></li>
+        <li><a href=" /logout">Logout</a></li>
+        <li>
+          <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <hr class="hero_hr" />
+  <!-- ADD IN REACT SIDE BAR FILTERS -->
+  <!-- NAV FILTERS -->
+
+  <div class="dropdown-sort">
+    <label for="sort">Sort by</label>
+    <select name="sort" id="sort">
+      <option value="featured">Featured</option>
+      <option value="newest">Newest</option>
+      <option value="high-low">Price: High-Low</option>
+      <option value="low-high">Price: Low-High</option>
+    </select>
+  </div>
+  <!-- MAIN CONTENT -->
+  <section id="product1" class="section-p1">
+    <h2>Featured Products</h2>
+    <p>Our most popular model and coloways!</p>
+    <div class="pro-container">
+      <div class="pro">
+        <div class="card">
+          <img src="{{url_for('static', filename='/Images/shoes/green1.png')}}" alt="green-shoe" />
+          <img src="{{url_for('static', filename='/Images/shoes/green2.png')}}" class="img-top" alt="green2" />
+        </div>
+        <div class="desc">
+          <span>Kinetic Footwear</span>
+          <h5>Kinetic Proto 5</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>$250</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+      </div>
+      <div class="pro">
+        <div class="card">
+          <img src="{{url_for('static', filename='/Images/shoes/yellow1.png')}}" alt="yellow-shoe" />
+          <img src="{{url_for('static', filename='/Images/shoes/yellow2.png')}}" class="img-top" alt="yellow2" />
+        </div>
+        <div class="desc">
+          <span>Kinetic Footwear</span>
+          <h5>Kinetic Proto 4</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>$250</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+      </div>
+      <div class="pro">
+        <div class="card">
+          <img src="{{url_for('static', filename='/Images/shoes/orange1.png')}}" alt="red-shoe" />
+          <img src="{{url_for('static', filename='/Images/shoes/orange2.png')}}" class="img-top" alt="red-2" />
+        </div>
+        <div class="desc">
+          <span>Running Shoe</span>
+          <h5>Kin-312 "Blaze"</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>$250</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+      </div>
+      <div class="pro">
+        <div class="card">
+          <img src="{{url_for('static', filename='/Images/shoes/purple1.png')}}" alt="orange-shoe" />
+          <img src="{{url_for('static', filename='/Images/shoes/purple2.png')}}" class="img-top" alt="purple2" />
+        </div>
+        <div class="desc">
+          <span>Every Day Shoes</span>
+          <h5>Kin-312 "Royal"</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>$250</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+      </div>
+      <div class="pro">
+        <div class="card">
+          <img src="{{url_for('static', filename='/Images/shoes/blue1.png')}}" alt="blue-shoe" />
+          <img src="{{url_for('static', filename='/Images/shoes/blue2.png')}}" class="img-top" alt="blue2" />
+        </div>
+        <div class="desc">
+          <span>Loafers</span>
+          <h5>Kin-312 "Ocean"</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>$250</h4>
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+      </div>
+      <div class="pro">
+        <h2 class="soon-text">COMING SOON</h2>
+        <img src="{{url_for('static', filename='/Images/shoes/neon3.png')}}" class="coming-soon" alt="coming soon" />
+        <div class="desc">
+          <span>Kinetic Footwear</span>
+
+          <div class="star"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <hr class="blue_yellow" />
+  <footer id="foot-main" style="background:url(/static/Images/banner8.svg) center / cover no-repeat;">
+    <div class="main-col">
+      <div class="foot-1">
+        <img class="foot-icon" src="{{url_for('static', filename='/Images/logo.png')}}" alt="logo" />
+        <h4>Follow Us On</h4>
+        <div class="follow-icon">
+          <i class="fa-brands fa-facebook"> <a href="#"> Facebook </a> </i>
+          <i class="fa-brands fa-twitter"><a href="#"> Twitter </a></i>
+          <i class="fa-brands fa-instagram-square"><a href="#"> Instagram</a></i>
+          <i class="fa-brands fa-youtube"><a href="#"> Youtube</a></i>
+        </div>
+        <div class="newstext">
+          <p>
+            Stay updated on our newest drops and
+            <span>special offers!</span>
+          </p>
+        </div>
+        <div class="call-action">
+          <input type="email" placeholder="Your email address" />
+          <button class="foot-btn">Sign Up</button>
+        </div>
+      </div>
+      <div class="foot-2">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Info</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="foot-3">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="foot-4">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="app-row">
+          <img class="appStore" src="{{url_for('static', filename='Images/googleplay.svg')}}" alt="Google-play" />
+          <img class="appStore" src="{{url_for('static', filename='Images/appstore.svg')}}" alt="Apple-Play" />
+        </div>
+        <p>Secured Payment Gateways</p>
+        <div class="pay-cards">
+          <img class="cards" src="{{url_for('static', filename='Images/visa.svg')}}" alt="Cards" />
+          <img class="cards" src="{{url_for('static', filename='Images/mastercard.svg')}}" alt="" />
+          <img class="cards" src="{{url_for('static', filename='Images/discover.svg')}}" alt="" />
+          <img class="cards" src="{{url_for('static', filename='Images/amex.svg')}}" alt="" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- SCRIPT -->
+  <script type="text/javascript" src="{{url_for('static', filename='/script/.js')}}"></script>
+</body>
+
+</html>
