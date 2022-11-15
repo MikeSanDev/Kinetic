@@ -28,7 +28,6 @@
       </ul>
     </div>
     <div id="mobile">
-      <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
       <i id="bar" class="fa-solid fa-bars"></i>
     </div>
   </section>
@@ -37,7 +36,7 @@
 
     <div class="hero-text">
       <h4>Providing freedom of energy for you and <br>
-        your devices with no additional hassle for you.</h4>
+        your devices with no additional hassle.</h4>
       <h1>Kinetic Footwear</h1>
     </div>
     <div class="newstext">
@@ -48,7 +47,7 @@
     </div>
     <div class="call-action">
       <form action="https://formsubmit.co/mjs070594@gmail.com" method="POST">
-        <input type="email" placeholder="Your email address" required />
+        <input class="email_form" type="email" placeholder="Your email address" required />
         <input type="hidden" name="_subject" value="New subscriber!">
         <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
         <button class="normal">Sign Up</button>
@@ -103,8 +102,8 @@
       </div>
       <div class="pro">
         <div class="card">
-          <img src="{{url_for('static', filename='/Images/shoes/blue1.png')}}" alt="red-shoe" />
-          <img src="{{url_for('static', filename='/Images/shoes/blue2.png')}}" class="img-top" alt="red-2" />
+          <img src="{{url_for('static', filename='/Images/shoes/blue1.png')}}" alt="blue-shoe" />
+          <img src="{{url_for('static', filename='/Images/shoes/blue2.png')}}" class="img-top" alt="blue-2" />
         </div>
         <div class="desc">
           <span>Running Shoe</span>
@@ -114,8 +113,8 @@
       </div>
       <div class="pro">
         <div class="card">
-          <img src="{{url_for('static', filename='/Images/shoes/purple1.png')}}" alt="red-shoe" />
-          <img src="{{url_for('static', filename='/Images/shoes/purple2.png')}}" class="img-top" alt="red-2" />
+          <img src="{{url_for('static', filename='/Images/shoes/purple1.png')}}" alt="purple-shoe" />
+          <img src="{{url_for('static', filename='/Images/shoes/purple2.png')}}" class="img-top" alt="purple-2" />
         </div>
         <div class="desc">
           <span>Running Shoe</span>
@@ -148,12 +147,10 @@
           <i class="fa-brands fa-instagram-square"><a href="#"> Instagram</a></i>
           <!-- <i class="fa-brands fa-youtube"><a href="#"> Youtube</a></i> -->
         </div>
-        <div class="newstext">
-          <p>
+        <div class="call-action">
+          <p class="newstext">
             Stay updated on our journey!
           </p>
-        </div>
-        <div class="call-action">
           <input type="email" placeholder="Your email address" />
           <button class="normal_footer">Sign Up</button>
         </div>

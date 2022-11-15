@@ -27,38 +27,48 @@
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
-
         <div id="mobile">
-            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
             <i id="bar" class="fa-solid fa-bars"></i>
         </div>
     </section>
     <hr class="team_hr">
     <section class="section-p1 ">
         <div class="main_block">
-            <div class="tech_block">
-                <div class="tech_photo tech_pic1"><img src="{{url_for('static', filename='/Images/jump_left.svg')}}">
+            <div class="tech_block tb1">
+                <div class="tech_photo tech_pic1"><img src="{{url_for('static', filename='/Images/zombie_left.svg')}}">
                 </div>
                 <div class="tech_info">
                     <h5>Walking is an everyday activity!</h5>
-                    <p>It helps us go to the grocery store, to our classes, to the other side of the city if we are so
-                        pleased. Walking helps us stay in shape and stay healthy. But what if it could do more for us?
-                        What if walking could give us power?</p>
+                    <p>When humans walk, they actually put a fair amount of energy into the surface of which they are
+                        moving on. After looking at many studies we found the range to be 50-67 Watts based on specific
+                        variables (weight, speed, etc.). Now this isn't enough power to power streetlights or buildings
+                        but it is enough to be useful in our daily lives.</p>
                 </div>
             </div>
-            <div class="tech_block">
+            <div class="tech_block tb2">
                 <div class="tech_info">
                     <h5>Our product does just that.</h5>
-                    <p>It takes the compression energy generated on your footwear and converts it to stored electrical
-                        power so you can use it to charge up your portable devices!</p>
+                    <p>Although many people have tried making an energy harvesting shoe before (as demonstrated by the
+                        hundreds of patents on these types of devices) there isn't a product like ours on the market!
+                        This isn't because of manufacturing or market reasons, but simply because no one has gotten
+                        enough power. </p>
                 </div>
                 <div class="tech_photo tech_pic2"><img src="{{url_for('static', filename='/Images/walk_right.svg')}}">
                 </div>
             </div>
-            <!-- <div class="tech_block">
-                <div class="tech_photo"><img src="{{url_for('static', filename='/Images/jump_left.svg')}}"></div>
-                <div class="tech_info"></div>
-            </div> -->
+            <div class="tech_block tb3">
+                <div class="tech_photo tech_pic1"><img src="{{url_for('static', filename='/Images/jump_left.svg')}}">
+                </div>
+                <div class="tech_info">
+                    <h5>Our energy harvesting system gets way more energy than anyone else</h5>
+                    <p> has ever gotten before.
+                        Enough to make a product that can be useful! We are aiming to allow people to power their lives
+                        by doing nothing more than what they would normally do. Imagine never having to check the
+                        battery on your phone when you leave for work in the morning. Never having to carry around a
+                        bulky power brick and a cable just so you can wait in line for that concert. All of these and
+                        more become possible. </p>
+                </div>
+            </div>
         </div>
     </section>
     <hr />
@@ -73,12 +83,10 @@
                     <i class="fa-brands fa-instagram-square"><a href="#"> Instagram</a></i>
                     <!-- <i class="fa-brands fa-youtube"><a href="#"> Youtube</a></i> -->
                 </div>
-                <div class="newstext">
-                    <p>
+                <div class="call-action">
+                    <p class="newstext">
                         Stay updated on our journey!
                     </p>
-                </div>
-                <div class="call-action">
                     <input type="email" placeholder="Your email address" />
                     <button class="normal_footer">Sign Up</button>
                 </div>
@@ -116,6 +124,7 @@
       </div> -->
         </div>
     </footer>
+    <script type="text/javascript" src="{{url_for('static', filename='/script/index.js')}}"></script>
 </body>
 
 </html>

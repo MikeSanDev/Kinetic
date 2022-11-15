@@ -27,9 +27,7 @@
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
-
         <div id="mobile">
-            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
             <i id="bar" class="fa-solid fa-bars"></i>
         </div>
     </section>
@@ -39,7 +37,7 @@
             <h1>Our Team</h1>
             <div class="double_block">
                 <div class="block_one">
-                    <img class="team_img" src="{{url_for('static', filename='/Images/neil-modified.png')}}"
+                    <img class="team_img border-img" src="{{url_for('static', filename='/Images/neil-modified.png')}}"
                         alt="neil" />
                     <h2>Neil John</h2>
                     <h3>Chief Executive Officer</h3>
@@ -51,8 +49,8 @@
                         he delivers is something that he would use when on a walk or on a stage. </p>
                 </div>
                 <div class="block_two">
-                    <img class="team_img" src="{{url_for('static', filename='/Images/koushik-modified.png')}}"
-                        alt="koushik" />
+                    <img class="team_img border-img"
+                        src="{{url_for('static', filename='/Images/koushik-modified.png')}}" alt="koushik" />
                     <h2>Koushik Neogi</h2>
                     <h3>Chief Technology Officer</h3>
                     <p>Koushik is a mechanical engineer by career who specializes in simulating and optimizing
@@ -120,3 +118,8 @@
             </div>
         </footer>
     </section>
+    <script type="text/javascript" src="{{url_for('static', filename='/script/index.js')}}"></script>
+
+</body>
+
+</html>

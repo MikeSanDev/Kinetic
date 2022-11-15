@@ -15,9 +15,7 @@ hr {
   padding: 40px 80px;
 }
 
-.section-b1 {
-  padding: 40px 0px;
-}
+
 
 body {
   width: 100%;
@@ -38,6 +36,7 @@ body {
   );
   height: 9px;
 }
+
 
 /*********************** HEADER ************************/
 
@@ -105,11 +104,11 @@ body {
 }
 /*********************** BODY ************************/
 .main_block {
-  margin: 10px 200px
+  margin: 40px 150px
 }
 .tech_block {
   display: flex;
-  padding: 20px 20px;
+  padding: 50px 20px;
   justify-content: center;
   align-items: center;
 }
@@ -117,7 +116,7 @@ body {
   text-align: center;
 }
 .tech_info h5{
-  font-size: 50px;
+  font-size: 30px;
   padding-left: 20px;
   padding-bottom: 10px;
 }
@@ -144,7 +143,7 @@ footer {
   background-position: center;
   color: #eee;
   padding: 120px 80px;
-  height: 500px;
+  height: auto;
 }
 footer #foot-main {
   margin-bottom: 20px;
@@ -235,7 +234,7 @@ footer input {
   height: 2.75rem;
   padding: 0 1.25rem;
   font-size: 14px;
-  width: 350px;
+  width: 20rem;
   color: #eee;
   background-color: #606063;
   border: 1px solid transparent;
@@ -278,3 +277,219 @@ footer p {
   color: #eee;
   font-size: 15px;
 }
+/***************** RESPONSIVE ******************** */
+
+@media screen and (max-width: 700px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #6cc4a1;
+    box-shadow: 0 40px 60px rgb(0, 0, 0, 0.1);
+    padding: 80px 0px 0px 10px;
+    transition: 0.3s;
+  }
+  #navbar.active {
+    right: 0px;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  #mobile i {
+    color: #eee;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+  #close {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #eee;
+    font-size: 24px;
+    display: initial;
+  }
+  #lg-bag {
+    display: none;
+  }
+  /* HERO MEDIA QUERY */
+  #hero {
+    height: 98vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+  }
+  .tb1 {
+    height: 80vh;
+  }
+  .tb2 {
+    height: 70vh;
+  }
+  .tb3 {
+    height: 95vh;
+  }
+  
+}
+
+/* Extra small devices (phones, up to 480px)  */
+@media screen and (max-width: 767px) {
+  #nav{
+    padding: 10px 40px;
+  }
+  .main_block {
+    margin: 30px 40px;
+  }
+
+  .tech_info h5{
+    font-size: 20px;
+}
+.tech_info p {
+  line-height: 1.3;
+  font-size: 15px;
+}
+.tech_photo img{
+  width:150px;
+  height: auto;
+}
+.tech_pic1{
+  margin-right: 10px;
+}
+.tech_pic2{
+  margin-left: 10px;
+}
+.tech_block {
+  display: flex;
+  padding: 50px 20px;
+  justify-content: center;
+  align-items: center;
+  
+}
+/* Footer */
+footer {
+  padding: 50px 30px;
+}
+.foot-icon{
+  display: none;
+}
+.main-col {
+  height: auto;
+}
+.col-1 {
+  margin:0;
+}
+.fa-brands {
+ margin: 10px;
+}
+.call-action {
+  padding: 30px 0px;
+}
+.call-action input{
+  margin-bottom: 8px;
+  width: 18rem;
+  border-radius: 4px;
+}
+.section-p1 {
+  padding: 15px 0px;
+}
+}
+/* Small devices (tablets, 768px and up)  */
+@media (min-width: 768px) and (max-width: 991px) {
+  .main_block {
+    margin: 40px 50px
+  }
+  .tech_info h5{
+    font-size: 20px;
+}
+.tech_info p {
+  letter-spacing: 1px;
+  line-height: 1.3;
+  font-size: 15px;
+}
+.tech_photo img{
+  width:180px;
+  height: auto;
+}
+.tech_block {
+  display: flex;
+  padding: 50px 10px;
+  justify-content: center;
+  align-items: center;
+}
+/* Footer */
+footer {
+  padding: 50px 30px;
+}
+.foot-icon{
+  display: none;
+}
+.main-col {
+  height: auto;
+}
+.col-1 {
+  margin:0;
+}
+.fa-brands {
+ margin: 10px;
+}
+.call-action {
+  padding: 30px 0px;
+}
+.call-action input{
+  margin-bottom: 8px;
+}
+}
+/* tablets/desktops and up ———–  */
+@media (min-width: 992px) and (max-width: 1199px) {
+   .main_block {
+    margin: 40px 140px
+  }
+  .tech_info h5{
+    font-size: 25px;
+}
+.tech_info p {
+  letter-spacing: 1px;
+  line-height: 1.3;
+  font-size: 20px;
+}
+.tech_photo img{
+  width:200px;
+  height: auto;
+}
+.tech_block {
+  display: flex;
+  padding: 50px 10px;
+  justify-content: center;
+  align-items: center;
+}
+/* Footer */
+footer {
+  padding: 50px 30px;
+}
+.foot-icon{
+  display: none;
+}
+.main-col {
+  height: auto;
+}
+.col-1 {
+  margin:0;
+}
+.fa-brands {
+ margin: 10px;
+}
+.call-action {
+  padding: 30px 0px;
+}
+.call-action input{
+  margin-bottom: 8px;
+}
+}
+

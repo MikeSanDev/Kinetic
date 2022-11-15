@@ -3,7 +3,7 @@ import pymysql.cursors
 
 class MySQLConnection:
     def __init__(self, db):
-        connection = pymysql.connect(host='localhost',
+        connection = pymysql.connect(host='kinetic.cx6pzk05fzqj.us-east-1.rds.amazonaws.com',
                                      user='root',  # change the user and password as needed
                                      password='rootroot',
                                      db=db,
