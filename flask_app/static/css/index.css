@@ -440,8 +440,11 @@ body {
   border: none;
   outline: none;
   transform: 0.2s;
+  text-decoration: none;
 }
-
+.learn-text{
+  text-decoration: none;
+}
 button:hover {
   background-color: #4d998f;
   color: #fff;

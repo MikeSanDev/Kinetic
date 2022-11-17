@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/1286657214.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='/css/tech.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='/css/index.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <title>Kinectic Footwear</title>
 </head>
@@ -16,59 +16,19 @@
         <a href="#"><img src="{{url_for('static', filename='/Images/logo.png')}}" class="logo"></a>
         <div>
             <ul id="navbar">
-                <li><a href="{{url_for('dashboard')}}">Home</a></li>
-                <li><a class="active" href="{{url_for('tech')}}">The Tech</a></li>
+                <li><a class="active" href="{{url_for('dashboard')}}">Home</a></li>
+                <li><a href="{{url_for('tech')}}">The Tech</a></li>
                 <!-- <li><a href="{{url_for('shop')}}">Shop</a></li> -->
                 <li><a href="{{url_for('team')}}">Our Team</a></li>
                 <!-- <li><a href="/logout">Logout</a></li> -->
                 <!-- <li>
-                    <a href="cart.html"><i id="lg-bag" class="fa-solid fa-bag-shopping"></i></a>
-                </li> -->
+          <a href="cart.html"><i id="lg-bag" class="fa-solid fa-bag-shopping"></i></a>
+        </li> -->
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
         <div id="mobile">
             <i id="bar" class="fa-solid fa-bars"></i>
-        </div>
-    </section>
-    <hr class="team_hr">
-    <section class="section-p1 ">
-        <div class="main_block">
-            <div class="tech_block tb1">
-                <div class="tech_photo tech_pic1"><img src="{{url_for('static', filename='/Images/zombie_left.svg')}}">
-                </div>
-                <div class="tech_info">
-                    <h5>Walking is an everyday activity!</h5>
-                    <p>When humans walk, they actually put a fair amount of energy into the surface of which they are
-                        moving on. After looking at many studies we found the range to be 50-67 Watts based on specific
-                        variables (weight, speed, etc.). Now this isn't enough power to power streetlights or buildings
-                        but it is enough to be useful in our daily lives.</p>
-                </div>
-            </div>
-            <div class="tech_block tb2">
-                <div class="tech_info">
-                    <h5>Our product does just that.</h5>
-                    <p>Although many people have tried making an energy harvesting shoe before (as demonstrated by the
-                        hundreds of patents on these types of devices) there isn't a product like ours on the market!
-                        This isn't because of manufacturing or market reasons, but simply because no one has gotten
-                        enough power. </p>
-                </div>
-                <div class="tech_photo tech_pic2"><img src="{{url_for('static', filename='/Images/walk_right.svg')}}">
-                </div>
-            </div>
-            <div class="tech_block tb3">
-                <div class="tech_photo tech_pic1"><img src="{{url_for('static', filename='/Images/jump_left.svg')}}">
-                </div>
-                <div class="tech_info">
-                    <h5>Our energy harvesting system gets way more energy than anyone else</h5>
-                    <p> has ever gotten before.
-                        Enough to make a product that can be useful! We are aiming to allow people to power their lives
-                        by doing nothing more than what they would normally do. Imagine never having to check the
-                        battery on your phone when you leave for work in the morning. Never having to carry around a
-                        bulky power brick and a cable just so you can wait in line for that concert. All of these and
-                        more become possible. </p>
-                </div>
-            </div>
         </div>
     </section>
     <hr />
@@ -87,8 +47,12 @@
                     <p class="newstext">
                         Stay updated on our journey!
                     </p>
-                    <input type="email" placeholder="Your email address" />
-                    <button class="normal_footer">Sign Up</button>
+                    <form action="https://formsubmit.co/mjs070594@gmail.com" method="POST">
+                        <input class="email_form" name="email" type="email" placeholder="Your email address" required />
+                        <input type="hidden" name="_subject" value="New subscriber!">
+                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                        <button class="normal">Sign Up</button>
+                    </form>
                 </div>
             </div>
             <div class="col-2">
@@ -101,7 +65,6 @@
             </div>
             <div class="col-3">
                 <h4>My Account</h4>
-                <!-- <a href="/logout">Logout</a> -->
                 <!-- <a href="#">View Cart</a>
         <a href="#">My Wishlist</a>
         <a href="#">Track My Order</a> -->
@@ -126,5 +89,12 @@
     </footer>
     <script type="text/javascript" src="{{url_for('static', filename='/script/index.js')}}"></script>
 </body>
+<!--  add review carousel -->
+<!-- ADD CAROUSEL BANNER WITH ALL INDIVIDUAL SHOES -->
+<!-- light color to back of featured products in blocks  -->
+<!-- add about  section under hero - 1 main div -> 2 divs -> photo of prototype on the left -> right side has story -"started by _ students at IIT, chasing thier passion blah blah" -> add about us -->
+<!-- move banner 2 to the about us page -->
+<!-- add single page shop html file -->
+<!-- fix nav bar hover bug -->
 
 </html>

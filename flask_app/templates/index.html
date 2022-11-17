@@ -20,7 +20,7 @@
         <li><a href="{{url_for('tech')}}">The Tech</a></li>
         <!-- <li><a href="{{url_for('shop')}}">Shop</a></li> -->
         <li><a href="{{url_for('team')}}">Our Team</a></li>
-        <li><a href="/logout">Logout</a></li>
+        <!-- <li><a href="/logout">Logout</a></li> -->
         <!-- <li>
           <a href="cart.html"><i id="lg-bag" class="fa-solid fa-bag-shopping"></i></a>
         </li> -->
@@ -47,9 +47,9 @@
     </div>
     <div class="call-action">
       <form action="https://formsubmit.co/mjs070594@gmail.com" method="POST">
-        <input class="email_form" type="email" placeholder="Your email address" required />
+        <input class="email_form" name="email" type="email" placeholder="Your email address" required />
         <input type="hidden" name="_subject" value="New subscriber!">
-        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+        <input type="hidden" name="_next" href="{{url_for('thanks')}}" value="thanks.html">
         <button class="normal">Sign Up</button>
       </form>
 
@@ -57,6 +57,18 @@
     </div>
   </section>
   <hr class="hero-hr" />
+  <section id="banner1" style="background:url(/static/Images/banner1.svg) center / cover no-repeat;" class="banner1">
+
+    <!-- add rotation animation to shoe img -->
+    <div class=" banner-box">
+      <h4>New Arrival</h4>
+      <h2>"Kin-312"</h2>
+      <span>Shoes are a form of expression which we value highly in our design process.</span>
+      <span>Take a look at our design concepts!</span>
+      <a href="#product1" class="learn">Explore More</a>
+    </div>
+  </section>
+  <hr class="wb_hr" />
   <section id="banner2" class="section-b1">
     <div class="idx_about_img">
       <img src="{{url_for('static', filename='/Images/ChargerShoe/blue2.png')}}" alt="orange-shoe" />
@@ -69,19 +81,7 @@
         sustainable power generation. We are making energy harvesting technology embedded within shoes to allow you to
         power your elecctronics whereever.</p>
       <p>Charge anywhere, anytime. Never worry about your phone.</p>
-      <button class="normal">Learn More</button>
-    </div>
-  </section>
-  <hr class="wb_hr" />
-  <section id="banner1" style="background:url(/static/Images/banner1.svg) center / cover no-repeat;" class="banner1">
-
-    <!-- add rotation animation to shoe img -->
-    <div class=" banner-box">
-      <h4>New Arrival</h4>
-      <h2>"Kin-312"</h2>
-      <span>Shoes are a form of expression which we value highly in our design process.</span>
-      <span>Take a look at our design concepts!</span>
-      <a href="#product1" class="learn">Explore More</a>
+      <button class="normal"><a class="learn-text" href="{{url_for('team')}}">Learn More</a></button>
     </div>
   </section>
   <hr class="bw_hr" />
@@ -113,7 +113,7 @@
       </div>
       <div class="pro">
         <div class="card">
-          <img src="{{url_for('static', filename='/Images/shoes/purple1.png')}}" alt="purple1" />
+          <img src="{{url_for('static', filename='/Images/shoes/purple1.png')}}" alt="purple-shoe" />
           <img src="{{url_for('static', filename='/Images/shoes/purple2.png')}}" class="img-top" alt="purple-2" />
         </div>
         <div class="desc">
@@ -151,8 +151,12 @@
           <p class="newstext">
             Stay updated on our journey!
           </p>
-          <input type="email" placeholder="Your email address" />
-          <button class="normal_footer">Sign Up</button>
+          <form action="https://formsubmit.co/mjs070594@gmail.com" method="POST">
+            <input class="email_form" name="email" type="email" placeholder="Your email address" required />
+            <input type="hidden" name="_subject" value="New subscriber!">
+            <input type="hidden" name="_next" href="{{url_for('thanks')}}" value="thanks.html">
+            <button class="normal">Sign Up</button>
+          </form>
         </div>
       </div>
       <div class="col-2">
@@ -165,7 +169,6 @@
       </div>
       <div class="col-3">
         <h4>My Account</h4>
-        <a href="/logout">Logout</a>
         <!-- <a href="#">View Cart</a>
         <a href="#">My Wishlist</a>
         <a href="#">Track My Order</a> -->
