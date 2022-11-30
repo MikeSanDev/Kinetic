@@ -13,7 +13,11 @@
 
 <body>
     <section id="nav">
-        <a href="#"><img src="{{url_for('static', filename='/Images/logo.png')}}" class="logo"></a>
+        <div class="nav_icon_title">
+            <a href="{{url_for('index')}}"><img src="{{url_for('static', filename='/Images/logo.png')}}"
+                    class="logo"></a>
+            <h3 class="nav_title">Kinetic Footwear</h3>
+        </div>
         <div>
             <ul id="navbar">
                 <li><a href="{{url_for('dashboard')}}">Home</a></li>

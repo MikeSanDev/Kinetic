@@ -54,8 +54,16 @@ body {
   left: 0;
 }
 .logo {
-  width: 70px;
+  width: 65px;
   height: auto;
+}
+.nav_title {
+  color: white;
+  padding-left: 10px;
+}
+.nav_icon_title {
+  display: flex;
+  align-items: center;
 }
 #navbar {
   display: flex;
@@ -111,8 +119,9 @@ body {
   height: auto;
 }
 .team_block h1 {
-  font-size: 30px;
+  font-size: 40px;
   margin-top: 20px;
+  color:#34568b;
 }
 .team_block h2 {
   font-size: 30px;

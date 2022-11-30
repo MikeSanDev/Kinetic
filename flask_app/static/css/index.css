@@ -67,8 +67,16 @@ body {
   left: 0;
 }
 .logo {
-  width: 70px;
+  width: 65px;
   height: auto;
+}
+.nav_title {
+  color: white;
+  padding-left: 10px;
+}
+.nav_icon_title {
+  display: flex;
+  align-items: center;
 }
 #navbar {
   display: flex;
@@ -403,7 +411,7 @@ body {
 
 }
 #banner2 img{
-  width: 400px;
+  width: 500px;
   border-radius: 20px;
   margin-left: 50px;
 }
@@ -707,6 +715,7 @@ footer p {
     height: auto;
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
   #banner2 .index_about { 
     width: 100%;
@@ -752,7 +761,24 @@ footer p {
     width: 100%;
     height:100%;
   }
-
+  #banner2 {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #banner2 .index_about { 
+    width: 100%;
+    margin: 25px;
+    padding: 0px 25px;
+  }
+  #banner2 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 20px 0px; 
+  }
 /* Footer */
 footer {
   padding: 50px 30px;
@@ -788,9 +814,18 @@ footer {
     padding: 0 50px;
     background-position: top 30% right 30%;
   }
-  #banner2 .index_about {
-  margin: 0px 20px;
+  #banner2 {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
+  #banner2 .index_about {
+  margin: 0;
+  padding: 0px 135px;
+  width: auto;
+  }
+
   #banner2 img {
     margin: 0px 20px; 
   }

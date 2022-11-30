@@ -13,7 +13,10 @@
 
 <body>
   <section id="nav">
-    <a href="#"><img src="{{url_for('static', filename='/Images/logo.png')}}" class="logo"></a>
+    <div class="nav_icon_title">
+      <a href="{{url_for('index')}}"><img src="{{url_for('static', filename='/Images/logo.png')}}" class="logo"></a>
+      <h3 class="nav_title">Kinetic Footwear</h3>
+    </div>
     <div>
       <ul id="navbar">
         <li><a class="active" href="{{url_for('dashboard')}}">Home</a></li>
@@ -70,17 +73,17 @@
   </section>
   <hr class="wb_hr" />
   <section id="banner2" class="section-b1">
-    <div class="idx_about_img">
-      <img src="{{url_for('static', filename='/Images/ChargerShoe/blue2.png')}}" alt="orange-shoe" />
+    <div class="idx_about_gif">
+      <img src="{{url_for('static', filename='/Images/kinetic.gif')}}" alt="shoe-gif" />
 
     </div>
     <div class="index_about">
       <span class="banner--emoji">🔋👟🧠</span>
-      <h1 class="about_title">About Us</h1>
-      <p>We're focusing on providing a comfortable and flexible experience for individuals to participate in
-        sustainable power generation. We are making energy harvesting technology embedded within shoes to allow you to
-        power your elecctronics whereever.</p>
-      <p>Charge anywhere, anytime. Never worry about your phone.</p>
+      <h1 class="about_title">The Problem</h1>
+      <p>The only solution if you want power on the go is a portable power bank. These are great for storing energy, but
+        they are bulky, and force you to charge them and carry them (cables and all) if you ever want to use them. Our
+        product solves all issues power banks have, all in the palm of your…feet. </p>
+      <p>All you have to do is walk!</p>
       <button class="normal"><a class="learn-text" href="{{url_for('team')}}">Learn More</a></button>
     </div>
   </section>

@@ -13,7 +13,11 @@
 
 <body>
     <section id="nav">
-        <a href="#"><img src="{{url_for('static', filename='/Images/logo.png')}}" class="logo"></a>
+        <div class="nav_icon_title">
+            <a href="{{url_for('index')}}"><img src="{{url_for('static', filename='/Images/logo.png')}}"
+                    class="logo"></a>
+            <h3 class="nav_title">Kinetic Footwear</h3>
+        </div>
         <div>
             <ul id="navbar">
                 <li><a href="{{url_for('dashboard')}}">Home</a></li>
@@ -33,6 +37,7 @@
     </section>
     <hr class="team_hr">
     <section class="section-p1 ">
+        <h1 class="tech_title">How It Works:</h1>
         <div class="main_block">
             <div class="tech_block tb1">
                 <div class="tech_photo tech_pic1"><img src="{{url_for('static', filename='/Images/zombie_left.svg')}}">
@@ -41,17 +46,19 @@
                     <h5>Walking is an everyday activity!</h5>
                     <p>When humans walk, they actually put a fair amount of energy into the surface of which they are
                         moving on. After looking at many studies we found the range to be 50-67 Watts based on specific
-                        variables (weight, speed, etc.). Now this isn't enough power to power streetlights or buildings
-                        but it is enough to be useful in our daily lives.</p>
+                        variables (weight, speed, etc.). Now this isn’t enough power to power streetlights or buildings
+                        but it is enough to be useful in our daily lives. </p>
                 </div>
             </div>
             <div class="tech_block tb2">
                 <div class="tech_info">
                     <h5>Our product does just that.</h5>
-                    <p>Although many people have tried making an energy harvesting shoe before (as demonstrated by the
-                        hundreds of patents on these types of devices) there isn't a product like ours on the market!
-                        This isn't because of manufacturing or market reasons, but simply because no one has gotten
-                        enough power. </p>
+                    <p> Although many people have tried making an energy harvesting shoe before (as demonstrated by the
+                        hundreds of patents on these types of devices) there isn’t a product like ours on the market!
+                        This isn’t because of manufacturing or market reasons, but simply because no one has
+                        <strong>gotten
+                            enough power.</strong>
+                    </p>
                 </div>
                 <div class="tech_photo tech_pic2"><img src="{{url_for('static', filename='/Images/walk_right.svg')}}">
                 </div>
@@ -60,8 +67,8 @@
                 <div class="tech_photo tech_pic1"><img src="{{url_for('static', filename='/Images/jump_left.svg')}}">
                 </div>
                 <div class="tech_info">
-                    <h5>Our energy harvesting system gets way more energy than anyone else</h5>
-                    <p> has ever gotten before.
+                    <h5>Our energy harvesting system gets way more energy than anyone else has ever gotten before.</h5>
+                    <p>
                         Enough to make a product that can be useful! We are aiming to allow people to power their lives
                         by doing nothing more than what they would normally do. Imagine never having to check the
                         battery on your phone when you leave for work in the morning. Never having to carry around a

@@ -12,12 +12,6 @@ h1 {
   color: #222;
 }
 
-h2 {
-  font-size: 46px;
-  line-height: 54px;
-  color: #222;
-}
-
 h4 {
   font-size: 20px;
   color: #222;
@@ -28,11 +22,6 @@ h6 {
   color: #222;
 }
 
-p {
-  font-size: 700;
-  color: #222;
-  margin: 15px 0 20px 0;
-}
 
 hr {
   background: linear-gradient(to right, #0be4d1, yellow);
@@ -50,11 +39,13 @@ body {
   width: 100%;
   font-family: 'Montserrat', sans-serif;
 
+
 }
+
 /*********************** HOME PAGE ************************/
 #hero {
     /* background-image: url("/static/Images/hero.png"); */
-    height: 98vh;
+    height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: top 25% right 0;
@@ -63,7 +54,9 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-  }
+    text-align: center;
+    align-items: center;
+}
   .hero-hr {
     background-image: linear-gradient(
       60deg,
@@ -76,68 +69,51 @@ body {
     );
     height: 12px;
   }
-  #hero .form {
-    display: flex;
-    width: 40%;
-  }
+.container{
+  overflow: hidden;
+}
   #hero h1 {
     margin-top: 10px;
-    color: #8cc0de;
-    font-size: 70px;
+    color: #93E9BE;
+    font-size: 80px;
+    animation-name: moveToLeft;
+    animation-duration: 3s;
+
   }
-  #hero h2 {
-    color: #f9f2ed;
-    font-size: 60px;
-  }
+
   #hero h4 {
     padding-bottom: 15px;
     color: #f9f2ed;
     font-size: 40px;
+    animation-name: moveToRight;
+    animation-duration: 4s;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+
   }
-  #hero p {
-    color: #eee;
-    font-size: 20px;
-  }
+
   #hero .hero-text {
-    margin-bottom: 20px;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
   }
   .hero-text h4 {
-    margin-top: 40px;
-  }
-  #hero input {
-    height: 2.75rem;
-    padding: 0 1.25rem;
-    font-size: 14px;
-    width: 350px;
-    color: #eee;
-    background-color: #606063;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    outline: none;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  #hero .newstext {
-    margin-top: 50px;
-  }
-  ::placeholder {
-    font-style: italic;
-    font-size: 1.2em;
-    color: mintcream;
-    padding: 5px;
+    margin: 20px 0px;
   }
   #hero button {
-    background-color: #e9ff4f;
+    background-color: #93E9BE;
     color: #606063;
     white-space: nowrap;
+    width: 140px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     font-size: 14px;
     font-weight: 600;
     padding: 15px 30px;
-    color: #444444;
-    background-color: #8cc0de;
-    border-radius: 4px;
+    border-radius:  50px;
     cursor: pointer;
     border: none;
     outline: none;
@@ -145,8 +121,67 @@ body {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    animation-name: animateBtn;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: backwards;
   }
+  #hero button:hover {
+    background-color: #7ec823;
+    color: #eee;
+  }
+  /* #hero button {
+    width: 180px;
+    padding: 12px;
+    margin: 20px;
+    border: solid #eee;
+    border-radius:  50px;
+    font-size: 18px;
+    outline: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    animation-name: animateBtn;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: backwards;
+  }
+
+
   #hero button:hover {
     background-color: #444444;
     color: #eee;
+    
+  }  */
+  #hero button a {
+    text-decoration: none;
+  }
+
+  @keyframes moveToLeft {
+    0% {
+      transform: translateY(120px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes moveToRight {
+    0% {
+      transform: translateY(-120px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes animateBtn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }

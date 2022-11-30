@@ -53,8 +53,16 @@ body {
   left: 0;
 }
 .logo {
-  width: 70px;
+  width: 65px;
   height: auto;
+}
+.nav_title {
+  color: white;
+  padding-left: 10px;
+}
+.nav_icon_title {
+  display: flex;
+  align-items: center;
 }
 #navbar {
   display: flex;
@@ -103,6 +111,11 @@ body {
   display: none;
 }
 /*********************** BODY ************************/
+.tech_title {
+text-align: center;
+color:#34568b;
+font-size: 40px;
+}
 .main_block {
   margin: 40px 150px
 }
