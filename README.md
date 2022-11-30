@@ -1,7 +1,5 @@
 # Kinetic Footwear
 
-<a href="http://52.204.129.185/">Live</a>
-
 Built an e-commerce site for a startup company that sells a usb/charge-able sneaker with every step
 *Currently in testing - if you would like to browse through the site, please create an account, you can use any made up email.
 
