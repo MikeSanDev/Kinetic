@@ -1,1 +1,1 @@
-web: gunicorn --bind 127.0.0.1:5000 server:app
+web: gunicorn server:app
