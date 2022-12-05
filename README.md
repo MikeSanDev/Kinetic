@@ -11,9 +11,10 @@ Built an e-commerce site for a startup company that sells a usb/charge-able snea
 * HTML/CSS
 * Javascript
 
-Landing Page
+Landing Page </br>
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/96930354/205545082-2c2a945a-76cc-47d2-bdc5-a6fa1352f4bf.gif)
-Home Page
+</br>
+Home Page </br>
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/96930354/205545181-74e53180-e508-4815-8da2-2b0fd5820ff2.gif)
 
 ![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/96930354/205545229-4ec23464-93c5-49f8-b80a-ee46a1a670b1.gif)
