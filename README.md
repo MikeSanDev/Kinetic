@@ -1,8 +1,7 @@
 # Kinetic Footwear
 
 Built an e-commerce site for a startup company that sells a usb/charge-able sneaker with every step
-*Currently in testing - if you would like to browse through the site, please create an account, you can use any made up email.
-
+-currently a concept site to show investors. A survey was implemented in order to get quantifiable data to show an interest for this product.
 ### Built With
 
 * Python
